@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>张明远 — 个人主页</title>
+  <meta name="description" content="张明远的个人学术主页，展示项目经历、学术论文和学习笔记。" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css?v=2" />
+</head>
+
+<body>
+
+  <!-- Mobile menu toggle -->
+  <button class="mobile-toggle" id="mobileToggle" aria-label="打开菜单">
+    <svg viewBox="0 0 24 24">
+      <path d="M3 6h18v2H3V6zm0 5h18v2H3v-2zm0 5h18v2H3v-2z" />
+    </svg>
+  </button>
+  <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+  <div class="layout">
+    <!-- ===== Sidebar ===== -->
+    <aside class="sidebar" id="sidebar">
+      <div class="avatar-wrapper">
+        <div class="avatar-ring">
+          <div class="avatar-placeholder" id="avatarPlaceholder"></div>
+        </div>
+      </div>
+
+      <div class="profile-info">
+        <h1 class="profile-name" id="profileName">加载中...</h1>
+        <p class="profile-title" id="profileTitle"></p>
+        <p class="profile-location" id="profileLocation">
+          <svg viewBox="0 0 24 24">
+            <path
+              d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"
+              fill="currentColor" />
+          </svg>
+          <span></span>
+        </p>
+      </div>
+
+      <p class="profile-bio" id="profileBio"></p>
+
+      <div class="divider"></div>
+
+      <div class="social-links" id="socialLinks"></div>
+    </aside>
+
+    <!-- ===== Main Content ===== -->
+    <main class="content">
+      <nav class="tab-nav" id="tabNav">
+        <button class="tab-btn active" data-tab="projects">项目经历</button>
+        <button class="tab-btn" data-tab="papers">学术论文</button>
+        <button class="tab-btn" data-tab="notes">学习笔记</button>
+      </nav>
+
+      <div class="card-grid" id="cardGrid">
+        <div class="loading-state">
+          <div class="loading-spinner"></div>
+          <p>加载中...</p>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script src="app.js?v=2"></script>
+</body>
+
+</html>

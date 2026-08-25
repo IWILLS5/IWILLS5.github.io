@@ -1,0 +1,41 @@
+[
+  {
+    "id": "model_train",
+    "title": "模型训练学习笔记",
+    "date": "2026-07-29",
+    "category": "深度学习",
+    "tags": [
+      "Pytorch",
+      "过拟合",
+      "欠拟合",
+      "正则化"
+    ],
+    "summary": "梳理了模型训练的一般流程、判断over-fit和under-fit",
+    "content_path": "content/notes/model_train/model.md"
+  },
+  {
+    "id": "transformer",
+    "title": "Transformer学习笔记",
+    "date": "2026-08-09",
+    "category": "深度学习",
+    "tags": [
+      "自注意力机制",
+      "transformer"
+    ],
+    "summary": "梳理了self-attention、multi-head Attention、Encoder 和 一些问题",
+    "content_path": "content/notes/transformer/read.md"
+  },
+  {
+    "id": "rnn_study",
+    "title": "RNN学习笔记",
+    "date": "2026-08-23",
+    "category": "深度学习",
+    "tags": [
+      "RNN",
+      "GRU",
+      "LSTM"
+    ],
+    "summary": "梳理了RNN、GRU、LSTM的模型差异和知识点",
+    "content_path": "content/notes/rnn/knowledge.md"
+  }
+]
