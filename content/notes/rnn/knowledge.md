@@ -26,7 +26,7 @@
     - $R_t = sigmoid(X_tW_{rx} + H_{t-1}W_{rh} + b_r)$
     - $Z_t = sigmoid(X_tW_{zx} + H_{t-1}W_{zh} + b_z)$
     - $\widetilde{H_t} = tanh(X_tW_{hx} + (H_{t-1}*R_t)W_{hh} + b_h)$
-    - $H_t = H_{t-1}*Z_t + (1 - Z_t)*\widetilde{H_t}$
+    - $H_t = H_{t-1}*Z_t + (1 - Z_t) * \widetilde{H_t}$
 ## 2.knowledge
 - 1.因为$R_t和Z_t$都要经过sigmoid函数，所以会被限制在0~1之间，所以 当$R_t$为1，$Z_t$为0时，就是普通的RNN
 # 三.LSTM
