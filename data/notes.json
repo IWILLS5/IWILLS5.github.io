@@ -14,7 +14,7 @@
     "content_path": "content/notes/model_train/model.md"
   },
   {
-    "id": "transformer",
+    "id": "transformer-konwledge",
     "title": "Transformer学习笔记",
     "date": "2026-08-09",
     "category": "深度学习",
@@ -23,7 +23,7 @@
       "transformer"
     ],
     "summary": "梳理了self-attention、multi-head Attention、Encoder 和 一些问题",
-    "content_path": "content/notes/transformer/read.md"
+    "content_path": "content/notes/transformer-knowledge/read.md"
   },
   {
     "id": "rnn_study",
@@ -37,5 +37,17 @@
     ],
     "summary": "梳理了RNN、GRU、LSTM的模型差异和知识点",
     "content_path": "content/notes/rnn/knowledge.md"
+  },
+  {
+    "id": "transformer-code",
+    "title": "Transformer源码实现",
+    "date": "2026-08-23",
+    "category": "深度学习",
+    "tags": [
+      "transformer",
+      "pytorch"
+    ],
+    "summary": "根据网上教程搓了一遍transformer",
+    "content_path": "content/notes/transformer/model.md"
   }
 ]
